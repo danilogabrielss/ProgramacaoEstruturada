@@ -1,0 +1,194 @@
+Danilo Gabriel Souza Santos
+
+ex 1
+
+	int baseret, alturaret, arearet;
+        Console.Write("Digite a base do retangulo: ");
+        baseret = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Digite a altura do retangulo: ");
+        alturaret = Convert.ToInt32(Console.ReadLine());
+        arearet = baseret * alturaret;
+        Console.WriteLine("A area do retangulo é " + arearet);
+        Console.ReadKey();
+
+ex 2
+
+            int lado, area;
+            Console.Write("Digite o tamanho do quadrado: ");
+            lado = Convert.ToInt32(Console.ReadLine());
+            area = lado * 2;
+            Console.Write("A area do quadrado é "+ area);
+            Console.ReadKey();
+
+ex 3
+
+            double diagonal, area, aresta;
+            Console.Write("Digite o valor da diagonal do quadrado: ");
+            diagonal = Convert.ToInt32(Console.ReadLine());
+            aresta = Math.Sqrt((diagonal * diagonal) / 2);
+            area = aresta * aresta;
+            Console.Write("A area do quadrado é " + area);
+            Console.ReadLine();
+	    Console.ReadKey();
+
+ex 4
+
+            int base , altura , area;
+            Console.Write("Digite o valor da base: ");
+            base = Console.ReadLine();
+            Console.Write("Digite o valor da altura: ");
+            altura = Console.ReadLine();
+            area = (base * altura) / 2 ;  
+            Console.ReadKey();
+ex 5
+
+            double diametro, raio, area;
+            Console.Write("Digite o tamanho do diametro da esfera: ");
+            diametro = double.Parse(Console.ReadLine());
+            raio = diametro / 2;
+            area = (4 * Math.PI * (raio * raio * raio)) / 3;
+            Console.Write("O volume é da esfera é " + area);
+            Console.ReadKey();
+ex 6
+
+            int n1, n2, n3, n4, media;
+            Console.Write("Digie um numero: ");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digie um numero: ");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digie um numero: ");
+            n3 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digie um numero: ");
+            n4 = Convert.ToInt32(Console.ReadLine());
+            media = (n1 + n2 + n3 + n4) / 4;
+            Console.Write("A media entre os numeros é " + media);
+            Console.ReadKey();
+ex 7
+
+            double n1, n2, media;
+            Console.Write("Digite um numero: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um numero: ");
+            n2 = double.Parse(Console.ReadLine());
+            media = Math.Sqrt(n1 * n2);
+            Console.Write("A media geometrica é " + media);
+            Console.ReadKey();
+ex 8
+
+            double milhamar, km, metros;
+            Console.Write("Digite a quantidade milha maritima: ");
+            milhamar = double.Parse(Console.ReadLine());
+            metros = milhamar * 1852;
+            km = metros / 1000;
+            Console.Write("A quantidade em quilometros é " + km);
+            Console.ReadKey();
+ex 9
+
+            double tensao, corrente, resistencia;
+            Console.Write("Digite o valor da resistencia do circuito: ");
+            resistencia = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor da corrente do circuito: ");
+            corrente = double.Parse(Console.ReadLine());
+            tensao = corrente * resistencia;
+            Console.WriteLine("O valor da tensao no circuito é " + tensao);
+            Console.ReadKey();
+ex 10
+
+            double tc, tf;
+            Console.Write("Digite a temperatura em Fahrenheit: ");
+            tf = double.Parse(Console.ReadLine());
+            tc = ((tf - 32) / 9) * 5;
+            Console.Write("A temperatura é " + tc + " em Celsius");
+            Console.ReadKey();
+ex 11
+
+            double area, diametro, raio;
+            Console.Write("Digite o tamanho do diametro do circulo: ");
+            diametro = double.Parse(Console.ReadLine());
+            raio = diametro / 2;
+            area = Math.PI*(raio * raio);
+            Console.Write("A area do ciruclo é " + area);
+            Console.ReadKey();
+ex 12
+
+            double altura, volume, raiobase;
+            Console.Write("Digite o valor da altura do cone: ");
+            altura = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor da raio da base do cone: ");
+            raiobase = double.Parse(Console.ReadLine());
+            volume = (Math.PI * raiobase * raiobase * altura) / 3;
+            Console.Write("O volume do cone é " + volume);
+            Console.ReadKey();
+ex 13
+
+            double vf, vi, aceleracao, tempo, ms;
+            Console.Write("Digite a velocidade incial (em m/s): ");
+            vi = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor da aceleracao: ");
+            aceleracao = double.Parse(Console.ReadLine());
+            Console.Write("Digite o tempo (em segundos): ");
+            tempo = double.Parse(Console.ReadLine());
+            ms = (tempo * aceleracao) + tempo ;
+            vf = ms * 3.6;
+            Console.Write("A velociade final é " + vf +  " (em km/h)");
+            Console.ReadKey();
+ex 14
+
+            double vl, ve, vc, raio, aresta;
+            Console.Write("Digite o valor do raio da esfera: ");
+            raio = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor da aresta do cubo: ");
+            aresta = double.Parse(Console.ReadLine());
+            vc = aresta * aresta * aresta;
+            ve = (4 / 3) * Math.PI * raio;
+            vl = vc - ve;
+            Console.Write("O valor livre entre o cubo e a aresta é " + vl);
+            Console.ReadKey();
+ex 15
+
+            double reais, cotacao, dolar;
+            Console.Write("Digite o valor da cotacão do dolar: ");
+            cotacao = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor do dolar: ");
+            dolar = double.Parse(Console.ReadLine());
+            reais = dolar * cotacao;
+            Console.Write("O valor em reais é " + reais);
+            Console.ReadKey();
+ex 16
+
+            double angulo, sen, cos, tan;
+            Console.Write("Digite o angulo em graus: ");
+            angulo = double.Parse(Console.ReadLine());
+            sen = Math.Sin(angulo);
+            cos = Math.Cos(angulo);
+            tan = Math.Tan(angulo);
+            Console.Write("O valor em seno, cosseno e tnagente é respectivamente: " + sen + "; " + cos + "; " + tan);
+            Console.ReadKey();
+ex 17
+
+            double X, Y, vfinal;
+            Console.Write("Digite o valor de X: ");
+            X = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor de Y: ");
+            Y = double.Parse(Console.ReadLine());
+            vfinal = Math.Pow (X , Y);
+            Console.Write("O valor de X elevado a Y é " + vfinal);
+            Console.ReadKey();
+ex 18
+
+            double n1, n2, n3, n4, n5, pagar, troco;
+            Console.Write("Digite um valor: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um valor: ");
+            n2 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um valor: ");
+            n3 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um valor: ");
+            n4 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um valor: ");
+            n5 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um valor referente ao pagamento da somatória destes valores: ");
+            pagar = double.Parse(Console.ReadLine());
+            troco = pagar - (n1 + n2 + n3 + n4 + n5);
+            Console.Write("O troco da somatoria é " + troco);
+            Console.ReadKey();
