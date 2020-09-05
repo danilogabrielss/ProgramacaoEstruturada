@@ -1,0 +1,66 @@
+Danilo Gabriel Souza Santos cb3011798
+
+ex 19
+
+            double n1, n2;
+            Console.Write("Digite um numero: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um numero: ");
+            n2 = double.Parse(Console.ReadLine());
+            if (n1 > n2)
+                Console.Write("O numero " + n1 + " é maior que " + n2);
+            else
+                Console.Write("O numero " + n2 +" é maior que " + n1);
+            Console.ReadKey();
+ex 20
+
+            double n1, n2;
+            Console.Write("Digite um numero: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um numero: ");
+            n2 = double.Parse(Console.ReadLine());
+            if (n1 < n2)
+                Console.Write("O numero " + n1 + " é menor");
+            else
+                Console.Write("O numero  " + n2 + " é menor");
+            Console.ReadKey();
+ex 21
+
+            double n1, n2;
+            Console.Write("Digite um numero: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite um numero: ");
+            n2 = double.Parse(Console.ReadLine());
+            if (n1 > n2)
+                Console.Write("O numero " + n1 + " é maior");
+            else
+                if (n2 > n1)
+                Console.Write("O numero " + n2 + " é maior");
+            else
+                 if (n1 == n2)
+                Console.Write("Os dois numeros são identicos");
+            Console.ReadKey();
+ex 22
+
+            double arearet, baseret, alturaret;
+            Console.Write("Digite o valor da altura do retangulo: ");
+            alturaret = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor da base do retangulo: ");
+            baseret = double.Parse(Console.ReadLine());
+            arearet = baseret * alturaret;
+            if (arearet > 100)
+                Console.Write("Terreno grande");
+            Console.ReadKey();
+ex23
+
+            double arearet, baseret, alturaret;
+            Console.Write("Digite o valor da altura do retangulo: ");
+            alturaret = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor da base do retangulo: ");
+            baseret = double.Parse(Console.ReadLine());
+            arearet = baseret * alturaret;
+            if (arearet > 100)
+                Console.Write("Terreno grande");
+            else
+                Console.Write("Terreno pequeno");
+            Console.ReadKey();

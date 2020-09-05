@@ -17,9 +17,13 @@ namespace ex23
             baseret = double.Parse(Console.ReadLine());
             arearet = baseret * alturaret;
             if (arearet > 100)
+                {
                 Console.Write("Terreno grande");
+                }
             else
-                Console.Write("Terreno pequeno");
+                {
+                 Console.Write("Terreno pequeno");
+                }
             Console.ReadKey();
         }
     }

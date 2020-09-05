@@ -17,7 +17,9 @@ namespace ex22
             baseret = double.Parse(Console.ReadLine());
             arearet = baseret * alturaret;
             if (arearet > 100)
-                Console.Write("Terreno grande");
+            {
+            Console.Write("Terreno grande");
+            }
             Console.ReadKey();
         }
     }
