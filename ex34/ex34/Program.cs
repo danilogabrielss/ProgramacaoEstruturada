@@ -6,10 +6,10 @@ namespace ex34
     {
         static void Main(string[] args)
         {
-            string sexo;
+            char sexo;
             Console.WriteLine("Digite o sexo: ");
-            sexo = Convert.ToString(Console.ReadLine());         
-            if (string == "M" && string == "F")
+            sexo = Convert.ToChar(Console.ReadLine());         
+            if (sexo = "M" )
             {
 
             }
