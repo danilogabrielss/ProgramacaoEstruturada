@@ -6,32 +6,48 @@ namespace prova_ex1
     {
         static void Main(string[] args)
         {
-            double idade;
-            Console.WriteLine("Digite da sua idade: ");
-            idade = double.Parse(Console.ReadLine());
-            if (idade < 16)
-            {
-                Console.WriteLine("Voce nao esta apto a votar");
-            }
-            else
-            {
-                if (idade == 16 || idade == 17 )
+            string continuar = "S";
+            while (continuar == "S")
+            {                
+                Console.WriteLine("Digite da sua idade: ");                
+                double idadeValidada;
+                bool campoValido = false;
+                campoValido = double.TryParse(Console.ReadLine(), out idadeValidada);
+
+                if (campoValido)
                 {
-                    Console.WriteLine("Voce é um eleitor facultativo");
+                    Console.WriteLine("Campo valido idade = " + idadeValidada);
+                } else
+                {
+                    Console.WriteLine("Erro ao validar campo");
+                }
+
+                if (idadeValidada < 16)
+                {
+                    Console.WriteLine("Voce nao esta apto a votar");
                 }
                 else
                 {
-                    if (idade >= 18 && idade <= 70)
-                    {
-                        Console.WriteLine("Voce é um eleitor obrigatorio");
-                    }
-                    else
+                    if (idadeValidada == 16 || idadeValidada == 17)
                     {
                         Console.WriteLine("Voce é um eleitor facultativo");
                     }
+                    else
+                    {
+                        if (idadeValidada >= 18 && idadeValidada <= 70)
+                        {
+                            Console.WriteLine("Voce é um eleitor obrigatorio");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Voce é um eleitor facultativo");
+                        }
+                    }
                 }
-            }
-            Console.ReadKey();
+                Console.WriteLine("Deseja continuar: (S//N)");
+                continuar = Console.ReadLine();                
+                Console.Clear();
+            }            
         }
     }
 }
