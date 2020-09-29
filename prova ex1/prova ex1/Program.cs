@@ -47,7 +47,8 @@ namespace prova_ex1
                 Console.WriteLine("Deseja continuar: (S//N)");
                 continuar = Console.ReadLine();                
                 Console.Clear();
-            }            
+            }
+            Console.ReadKey();
         }
     }
 }

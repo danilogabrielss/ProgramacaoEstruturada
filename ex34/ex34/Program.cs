@@ -6,13 +6,16 @@ namespace ex34
     {
         static void Main(string[] args)
         {
-            char sexo;
-            Console.WriteLine("Digite o sexo: ");
-            sexo = Convert.ToChar(Console.ReadLine());         
-            if (sexo = "M" )
+            string sexo;
+            Console.Write("Digite o sexo: ");
+            sexo = Console.ReadLine();         
+            while ((sexo != "M") && (sexo != "F"))
             {
-
+                Console.WriteLine("Sexo invalido!");
+                Console.Write("Digite o sexo: ");
+                sexo = Console.ReadLine(); 
             }
+            Console.WriteLine("Sexo valido.");
             Console.ReadKey();
         }
     }
