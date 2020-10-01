@@ -1,0 +1,124 @@
+ex 32
+            int contadorfinal,contador;
+            int c = 0 ;        
+            Console.WriteLine("Digite o valor do seu contador: ");
+            contador = Convert.ToInt32(Console.ReadLine());
+
+            if (contador <= 0) ;
+            {
+                Console.WriteLine("Numero invalido!");
+                Console.WriteLine("Digite o valor do seu contador: ");
+                contador = Convert.ToInt32(Console.ReadLine());
+            }            
+            Console.WriteLine("Até quanto irá o contador: ");
+            contadorfinal = Convert.ToInt32(Console.ReadLine());
+            if (contadorfinal <= contador);
+            {
+                Console.WriteLine("Numero invalido!");
+                Console.WriteLine("Até quanto irá o contador: ");
+                contadorfinal = Convert.ToInt32(Console.ReadLine());
+            }
+            for (c = contador; contador <= contadorfinal ; contador = contador + 1)
+            {
+                Console.WriteLine(contador);
+            }
+            Console.ReadKey();
+ex 33
+            int n1,n2;            
+            Console.Write("Digite um numero: ");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digite outro numero: ");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            while (n2 < n1)
+            {
+                Console.WriteLine("Este numero tem que ser maior que o outro!");
+                Console.Write("Digite outro numero: ");
+                n2 = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Numero aceito.");
+            Console.ReadKey();
+ex34
+            string sexo;
+            Console.Write("Digite o sexo: ");
+            sexo = Console.ReadLine();         
+            while ((sexo != "M") && (sexo != "F"))
+            {
+                Console.WriteLine("Sexo invalido!");
+                Console.Write("Digite o sexo: ");
+                sexo = Console.ReadLine(); 
+            }
+            Console.WriteLine("Sexo valido.");
+            Console.ReadKey();
+ex35
+            double contador = 1, resultado;
+            do
+            {
+                resultado = 5 * contador;
+                Console.WriteLine("5 x " + contador + " = " + resultado);
+                contador = contador + 1;
+            } while (contador <= 10);
+ex36
+            double tabuada ,contador = 1, resultado;
+            Console.Write("Digite um numero: ");
+            tabuada = double.Parse(Console.ReadLine());
+            while (tabuada < 0)
+            {
+                Console.WriteLine("Numero invalido!");
+                Console.Write("Digite outro número: ");
+                tabuada = double.Parse(Console.ReadLine());
+            } 
+            do
+            {
+                resultado = tabuada * contador ;
+                Console.WriteLine(tabuada + "x " + contador + " = " + resultado);
+                contador = contador + 1;
+            } while (contador <= 10);
+ex37
+            double tabuada, contador, resultado;
+            Console.Write("Digite um numero: ");
+            tabuada = double.Parse(Console.ReadLine());
+            while (tabuada < 0)
+            {
+                Console.WriteLine("Numero invalido!");
+                Console.Write("Digite outro número: ");
+                tabuada = double.Parse(Console.ReadLine());
+            }
+            Console.Write("Digite um numero: ");
+            contador = double.Parse(Console.ReadLine());
+            while (contador < tabuada)
+            {
+                Console.WriteLine("Numero invalido!");
+                Console.Write("Digite outro número: ");
+                contador = double.Parse(Console.ReadLine());
+            }
+            do
+            {
+                resultado = tabuada * contador;
+                Console.WriteLine(tabuada + " x " + contador + " = " + resultado);
+                contador = contador - 1;
+            } while (contador >= 1);
+ex38
+            int contador = 1, resultado, tabuada = 1;
+            string teste;
+            while (tabuada <= 20)
+            {
+                contador = 1;
+                do
+                {
+                    resultado = tabuada * contador;
+                    Console.WriteLine(tabuada + " x " + contador + " = " + resultado);
+                    contador = contador + 1;
+                } while (contador <= 10);
+                teste = Console.ReadLine();
+                tabuada = tabuada + 1;
+            }
+            Console.ReadKey();
+ex39
+            double contador = 1, contador1 = 1 , resultado;
+            do
+            {
+                resultado = contador + contador1;
+                Console.WriteLine(contador1 + " + " + contador + " = " + resultado);
+                contador1 = contador;
+                contador = contador + 1;
+            } while (resultado <= 100);
