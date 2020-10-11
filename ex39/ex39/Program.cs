@@ -5,8 +5,8 @@ namespace ex39
     class Program
     {
         static void Main(string[] args)
-        {
-            double contador = 1, contador1 = 1 , resultado;
+        {            
+            double contador = 0, contador1 = 0 , resultado;
             do
             {
                 resultado = contador + contador1;
