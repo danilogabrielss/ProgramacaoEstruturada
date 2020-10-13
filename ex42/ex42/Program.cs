@@ -18,7 +18,7 @@ namespace ex42
                 numero = int.Parse(Console.ReadLine());
             }
 
-            for (; numero <= contador ; numero++)
+            for (; numero > contador ; numero++)
             {
                 sequencia[contador] = contador + impar;
                 Console.Write(sequencia[contador] + ", ");

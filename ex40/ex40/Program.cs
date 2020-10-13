@@ -13,7 +13,6 @@ namespace ex40
                 anterior = atual;
                 atual = proximo;
                 proximo = atual + anterior;
-
             }
         }
     }
